@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BactiSee</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="app">
+        <div class="background-ornaments"></div>
+
+        <header class="hero">
+            <div class="brand">
+                <div class="logo-mark" aria-hidden="true"></div>
+                <div>
+                    <p class="eyebrow">Surface safety scanner</p>
+                    <h1>BactiSee Demo</h1>
+                    <p class="subtitle">Rapid visual screening with a clinical focus.</p>
+                </div>
+            </div>
+            <div class="status-pill">
+                <span class="status-dot" aria-hidden="true"></span>
+                Ready for intake
+            </div>
+        </header>
+
+        <main class="panel">
+            <section class="upload-section">
+                <label for="imageInput">Capture the surface image</label>
+                <input type="file" id="imageInput" accept="image/*" capture="environment">
+                <p class="hint">Use steady lighting for better signal separation.</p>
+            </section>
+
+            <button class="scan-btn" onclick="runAnalysis()">Scan for Bacteria</button>
+
+            <section id="results" class="results-card">
+                <div class="results-header">
+                    <h3>Real-Time Assessment</h3>
+                    <span class="chip">Live</span>
+                </div>
+                <div class="gauge-container">
+                    <div id="gaugeBar" class="gauge-bar"></div>
+                </div>
+                <div class="status-row">
+                    <span class="status-indicator" aria-hidden="true"></span>
+                    <p id="statusText">Ready to scan.</p>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
