@@ -1,4 +1,5 @@
 # BactiSee
+TRY IT HERE: bacti-see-demo.vercel.app
 A functional full-stack prototype for BactiSee, a smartphone-based application for rapid bacterial contamination detection. This project integrates a Python (Flask) image-processing backend with a Node.js/JavaScript frontend to deliver real-time contamination assessment through a graphical gauge.
 
 Core FeaturesAdaptive Thresholding Algorithm: Implements a dynamic statistical filter ($Mean + k \cdot \sigma$) to extract contamination data while accounting for variable ambient lighting.Saturation-Based Glare Guard: A noise-reduction filter that identifies and ignores high-saturation specular reflections (glare) to ensure accurate quantification logic.Real-Time Contamination Gauge: A responsive UI that translates raw pixel data into a visual "Safe/Warning/Danger" assessment for the user.
